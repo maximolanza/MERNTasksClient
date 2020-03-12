@@ -21,17 +21,17 @@ const Tarea = ({ tarea }) => {
             }
             </div>
             <div className="acciones">
-                <buton
+                <button
                 type="button"
                 className="btn btn-primario">
                 Editar
-                </buton>
+                </button>
 
-                <buton
+                <button
                 type="button"
                 className="btn btn-secundario">
                 Eliminar
-                </buton>
+                </button>
             </div>
 
         </li>
