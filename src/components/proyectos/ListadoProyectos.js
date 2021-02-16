@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useContext } from 'react';
+import React, { Fragment, useState,  useEffect, useContext } from 'react';
 import Proyecto from './Proyecto';
 import proyectoContext from '../../context/proyectos/proyectoContext';
 
@@ -10,7 +10,7 @@ const ListadoProyectos = () => {
     const proyectosContext = useContext(proyectoContext);
     const { proyectos, obtenerProyectos } = proyectosContext;
 
-    // Obtener proyectos
+    // Obtener proyectos cuando carga el componente
     useEffect(() => {
         obtenerProyectos();
     }, [])
@@ -18,7 +18,7 @@ const ListadoProyectos = () => {
 
 
     //Revisar si proyectos tiene contenido
-        if(proyectos.length === 0) return null;
+    if( proyectos.length === 0) return null;
 
        
     return (  
