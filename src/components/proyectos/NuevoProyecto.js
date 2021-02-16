@@ -7,7 +7,7 @@ const NuevoProyecto = () => {
     const proyectosContext = useContext(proyectoContext);
     const { formulario, mostrarFormulario } = proyectosContext;
 
-    const [proyecto, guardarProyecto] = useState({
+    const [ proyecto, guardarProyecto ] = useState({
         nombre: ''
     })
 
